@@ -1,3 +1,4 @@
+import { Toaster } from "sonner"
 import CreateNewUser from "./components/CreateNewUser"
 import ListOfUsers from "./components/ListOfUsers"
 
@@ -7,6 +8,7 @@ function App() {
    <main>
     <ListOfUsers/>
     <CreateNewUser/>
+    <Toaster richColors/>
    </main>
   )
 }
