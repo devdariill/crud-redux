@@ -52,7 +52,8 @@ export const usersSlice = createSlice({
 	reducers: {
 		addNewUser: (state, action: PayloadAction<User>) => {
 			const id = crypto.randomUUID();
-			return [...state, { id, ...action.payload }];
+			state.push({ id, ...action.payload }); // immer 5.7kb
+			// return [...state, { id, ...action.payload }];
 		},
 		deleteUserById: (state, action: PayloadAction<UserId>) => {
 			// deleteUserById: (state, action: { type: string; payload: UserId }) => {
@@ -61,7 +62,8 @@ export const usersSlice = createSlice({
 		},
 		rollbackUser: (state, action: PayloadAction<UserWithId>) => {
 			const user = state.some((user) => user.id === action.payload.id);
-			if (!user) return [...state, action.payload];
+			if (!user) return state.push(action.payload); // immer 5.7kb
+			// if (!user) return [...state, action.payload];
 		},
 	},
 });
