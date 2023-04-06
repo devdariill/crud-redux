@@ -1,8 +1,10 @@
+import ListOfUsers from "./components/ListOfUsers"
+
 function App() {
 
   return (
    <main>
-    Holis
+    <ListOfUsers/>
    </main>
   )
 }
