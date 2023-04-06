@@ -1,3 +1,4 @@
+import CreateNewUser from "./components/CreateNewUser"
 import ListOfUsers from "./components/ListOfUsers"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
    <main>
     <ListOfUsers/>
+    <CreateNewUser/>
    </main>
   )
 }
