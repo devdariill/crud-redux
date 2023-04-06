@@ -25,7 +25,7 @@ const initialState: UserWithId[] = [
 		id: "3",
 		name: "Darius Smith",
 		email: "dariussmith@gmail.com",
-		github: "dariussmith",
+		github: "midudev",
 	},
 ];
 
