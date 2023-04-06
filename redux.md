@@ -1,0 +1,1 @@
+>pnpm add @reduxjs/toolkit react-redux -E
