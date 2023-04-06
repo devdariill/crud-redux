@@ -10,8 +10,8 @@ import {
   Title
 } from "@tremor/react";
   
-import { useAppSelector } from "../hook/store";
-import { useUserActions } from "../hook/userActions";
+import { useAppSelector } from "../hooks/store";
+import { useUserActions } from "../hooks/useUserActions";
 
 export default function ListOfUsers() {
   const users = useAppSelector((state) => state.users);
