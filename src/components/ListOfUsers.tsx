@@ -10,8 +10,9 @@ import {
   Title
 } from "@tremor/react";
   
-  
+import { useSelector } from "react-redux";
 export default function ListOfUsers() {
+  const users = useSelector((state) => state.users);
   return (
     <Card>
       <Title>
